@@ -1,0 +1,41 @@
+{
+  "name": "odenktools/laravel-bca",
+  "description": "Library REST API Untuk Develop BCA Payment",
+  "license": "MIT",
+  "keywords": ["bca", "php", "rest", "banking"],
+  "homepage": "https://github.com/odenktools/laravel-bca",
+  "authors": [{
+    "name": "odenktools",
+    "email": "odenktools86@gmail.com",
+    "homepage": "https://odenktools.com",
+    "role": "Developer"
+  }],
+  "require": {
+    "php": "^5.5.9 || ^7.0",
+    "illuminate/contracts": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
+    "illuminate/support": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
+    "illuminate/validation": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
+    "graham-campbell/manager": "^2.4",
+    "odenktools/php-bca": "^2.0.1"
+  },
+  "require-dev": {
+    "graham-campbell/testbench": "^3.2",
+    "mockery/mockery": "^0.9.5",
+    "phpunit/phpunit": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Odenktools\\Bca\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Odenktools\\Tests\\Bca\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
