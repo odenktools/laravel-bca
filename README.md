@@ -6,14 +6,14 @@ Laravel PHP library untuk mengintegrasikan Aplikasi Anda dengan sistem BCA (Bank
 
 Seluruh fitur, method, property pada Laravel PHP library ini seluruhnya sama dengan [Odenktools PHP BCA](https://github.com/odenktools/php-bca).
 
-* [Installasi](https://github.com/odenktools/php-bca#instalasi)
-* [Setting](https://github.com/odenktools/php-bca#koneksi-dan-setting)
-* [Login](https://github.com/odenktools/php-bca#login)
-* [Informasi Saldo](https://github.com/odenktools/php-bca#balance-information)
-* [Transfer](https://github.com/odenktools/php-bca#fund-transfer)
-* [Mutasi Rekening](https://github.com/odenktools/php-bca#account-statement)
-* [Info Kurs](https://github.com/odenktools/php-bca#foreign-exchange-rate)
-* [Pencarian ATM Terdekat](https://github.com/odenktools/php-bca#nearest-atm-locator)
+* [Installasi](https://github.com/odenktools/laravel-bca#instalasi)
+* [Setting](https://github.com/odenktools/laravel-bca#koneksi-dan-setting)
+* [Login](https://github.com/odenktools/laravel-bca#login)
+* [Informasi Saldo](https://github.com/odenktools/laravel-bca#balance-information)
+* [Transfer](https://github.com/odenktools/laravel-bca#fund-transfer)
+* [Mutasi Rekening](https://github.com/odenktools/laravel-bca#account-statement)
+* [Info Kurs](https://github.com/odenktools/laravel-bca#foreign-exchange-rate)
+* [Pencarian ATM Terdekat](https://github.com/odenktools/laravel-bca#nearest-atm-locator)
 * More ...
 
 ### INSTALASI
