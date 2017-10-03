@@ -12,6 +12,7 @@
   }],
   "require": {
     "php": "^5.5.9 || ^7.0",
+    "ext-curl": "*",
     "illuminate/contracts": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
     "illuminate/support": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
     "illuminate/validation": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
@@ -35,6 +36,20 @@
   },
   "config": {
     "preferred-install": "dist"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Odenktools\\Bca\\BcaServiceProvider"
+      ],
+      "aliases": {
+        "Bca": "Odenktools\\Bca\\Facades\\Bca"
+      }
+    }
+  },
+  "scripts": {
+    "test": "phpunit --colors=always",
+    "test:ci": "composer test -- --verbose --coverage-text --coverage-clover=coverage.xml"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
