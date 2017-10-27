@@ -12,29 +12,41 @@ env:
 
 matrix:
   include:
-    - php: 5.4
     - php: 5.5
+      env: LARAVEL_VERSION=5.2.*
+    - php: 5.5
+      env: LARAVEL_VERSION=5.3.*
+    - php: 5.5
+      env: LARAVEL_VERSION=5.4.*
     - php: 5.6
+      env: LARAVEL_VERSION=5.2.*
+    - php: 5.6
+      env: LARAVEL_VERSION=5.2.*
+    - php: 5.6
+      env: LARAVEL_VERSION=5.3.*
+    - php: 5.6
+      env: LARAVEL_VERSION=5.4.*
     - php: hhvm
       env: XDEBUG=1   
     - php: 7.0
-      env: COVERAGE=1 XDEBUG=1
+      env: COVERAGE=1 XDEBUG=1 LARAVEL_VERSION=5.4.*
     - php: 7.1
-      env: COVERAGE=1 XDEBUG=1
+      env: COVERAGE=1 XDEBUG=1 LARAVEL_VERSION=5.4.*
     - php: 7.2
-      env: COVERAGE=1 XDEBUG=1
+      env: COVERAGE=1 XDEBUG=1 LARAVEL_VERSION=5.4.*
   fast_finish: true
   allow_failures:
     - php: 7.0
     - php: 7.1
     - php: 7.2
 
-before_script:
+install:
   - travis_retry composer self-update
-  - travis_retry composer install --no-interaction --prefer-source --dev
+  - travis_retry composer require "laravel/framework:${LARAVEL_VERSION}" --no-update -n
 
 script:
-  - composer test:ci
+  - if [ "$TRAVIS_PHP_VERSION" != "7.0" ]; then vendor/bin/phpunit; fi
+  - if [ "$TRAVIS_PHP_VERSION" == "7.0" ]; then vendor/bin/phpunit --coverage-clover build/logs/clover.xml; fi
 
 after_success:
   bash <(curl -s https://codecov.io/bash)

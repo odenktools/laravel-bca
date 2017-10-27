@@ -1,12 +1,18 @@
 <?php
 
-declare (strict_types = 1);
-
 namespace Odenktools\Tests\Bca;
 
+use Bca\BcaHttp;
 use Odenktools\Bca;
 use Odenktools\Bca\BcaFactory;
 
+/**
+ * BCA factory provider test class.
+ *
+ * @author     Pribumi Technology
+ * @license    MIT
+ * @copyright  (c) 2017, Pribumi Technology
+ */
 class BcaFactoryTest extends AbstractTestCase
 {
     public function testMakeStandard()
@@ -27,8 +33,7 @@ class BcaFactoryTest extends AbstractTestCase
             'port'          => 443,
             'timeout'       => 30,
         ]);
-
-        $this->assertInstanceOf(Bca::class, $return);
+        $this->assertInstanceOf(BcaHttp::class, $return);
     }
 
     /**
@@ -83,17 +88,17 @@ class BcaFactoryTest extends AbstractTestCase
         $factory = $this->getBcaFactory();
 
         $factory->make([
-            'corp_id'       => 'your-corp_id',
-            'client_id'     => 'your-client_id',
-            'api_key'       => 'your-api_key',
-            'secret_key'    => 'your-secret_key',
-            'timezone'      => 'Asia/Jakarta',
-            'host'          => 'sandbox.bca.co.id',
-            'scheme'        => 'https',
-            'development'   => true,
-            'options'       => [],
-            'port'          => 443,
-            'timeout'       => 30,
+            'corp_id'     => 'your-corp_id',
+            'client_id'   => 'your-client_id',
+            'api_key'     => 'your-api_key',
+            'secret_key'  => 'your-secret_key',
+            'timezone'    => 'Asia/Jakarta',
+            'host'        => 'sandbox.bca.co.id',
+            'scheme'      => 'https',
+            'development' => true,
+            'options'     => [],
+            'port'        => 443,
+            'timeout'     => 30,
         ]);
     }
 
