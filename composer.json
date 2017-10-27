@@ -22,7 +22,7 @@
   "require-dev": {
     "graham-campbell/testbench": "^3.2",
     "mockery/mockery": "^0.9.5 || ~1.0",
-    "phpunit/phpunit": "^5.4 || ~6.0"
+    "phpunit/phpunit": "~4.0 || ^5.4 || ~6.0"
   },
   "autoload": {
     "psr-4": {

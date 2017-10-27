@@ -1,4 +1,5 @@
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/e008fb31-cb9c-4021-9475-f35c66e14e3e/small.png)](https://insight.sensiolabs.com/projects/e008fb31-cb9c-4021-9475-f35c66e14e3e)
+[![Build Status](https://travis-ci.org/odenktools/laravel-bca.svg?branch=master)](https://travis-ci.org/odenktools/laravel-bca)
 [![codecov](https://codecov.io/gh/odenktools/laravel-bca/branch/master/graph/badge.svg)](https://codecov.io/gh/odenktools/laravel-bca)
 [![Latest Stable Version](https://poser.pugx.org/odenktools/laravel-bca/v/stable)](https://packagist.org/packages/odenktools/laravel-bca)
 [![Latest Unstable Version](https://poser.pugx.org/odenktools/laravel-bca/v/unstable)](https://packagist.org/packages/odenktools/laravel-bca)
@@ -8,7 +9,22 @@
 
 Laravel PHP library untuk mengintegrasikan Aplikasi Anda dengan sistem BCA (Bank Central Asia). Untuk dokumentasi lebih jelas dan lengkap, silahkan kunjungi website resminya di [Developer BCA](https://developer.bca.co.id/documentation)
 
-Jika merasa terbantu dengan adanya library ini, jangan lupa untuk kasih STAR untuk library ini.
+Library ini support PHP :
+
+* PHP 5.5
+* PHP 5.6
+* PHP 7.0
+* PHP 7.1
+* PHP 7.2
+
+Library ini support Laravel :
+
+* Laravel 5.2.x
+* Laravel 5.3.x
+* Laravel 5.4.x
+* Laravel 5.5.x
+
+Jika merasa terbantu dengan adanya library ini, jangan lupa untuk berikan ```STAR``` pada respository ini. Happy Koding!
 
 ## Fitur Library
 
