@@ -1,5 +1,7 @@
-[![Latest Stable Version](https://poser.pugx.org/odenktools/laravel-bca/v/stable)](https://packagist.org/packages/odenktools/php-bca)
-[![Latest Unstable Version](https://poser.pugx.org/odenktools/laravel-bca/v/unstable)](https://packagist.org/packages/odenktools/php-bca)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/e008fb31-cb9c-4021-9475-f35c66e14e3e/small.png)](https://insight.sensiolabs.com/projects/e008fb31-cb9c-4021-9475-f35c66e14e3e)
+[![codecov](https://codecov.io/gh/odenktools/laravel-bca/branch/master/graph/badge.svg)](https://codecov.io/gh/odenktools/laravel-bca)
+[![Latest Stable Version](https://poser.pugx.org/odenktools/laravel-bca/v/stable)](https://packagist.org/packages/odenktools/laravel-bca)
+[![Latest Unstable Version](https://poser.pugx.org/odenktools/laravel-bca/v/unstable)](https://packagist.org/packages/odenktools/laravel-bca)
 [![Total Downloads](https://poser.pugx.org/odenktools/laravel-bca/downloads)](https://packagist.org/packages/odenktools/laravel-bca)
 
 # Laravel BCA (Bank Central Asia)

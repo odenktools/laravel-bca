@@ -6,7 +6,6 @@ use Bca\BcaHttp;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Lumen\Application as LumenApplication;
 
 /**
  * Laravel BCA REST API Library.
@@ -38,8 +37,6 @@ class BcaServiceProvider extends ServiceProvider
 
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([$source => config_path('bca.php')]);
-        } elseif ($this->app instanceof LumenApplication) {
-            $this->app->configure('bca');
         }
 
         $this->mergeConfigFrom($source, 'bca');
