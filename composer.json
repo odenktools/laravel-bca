@@ -20,7 +20,7 @@
     "odenktools/php-bca": "2.*"
   },
   "require-dev": {
-    "graham-campbell/testbench": "^3.2",
+    "graham-campbell/testbench": "3.2.*|3.3.*|3.4.*|3.5.*",
     "mockery/mockery": "^0.9.5 || ~1.0",
     "phpunit/phpunit": "~4.0 || ^5.4 || ~6.0"
   },
