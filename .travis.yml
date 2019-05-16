@@ -34,12 +34,12 @@ matrix:
     - php: 7.0
       env:
         - COVERAGE=1 XDEBUG=1
-        - PHPUNIT_VERSION=^5.7
+        - PHPUNIT_VERSION=^6.0
         - LARAVEL_VERSION=5.5.*
     - php: 7.1
       env:
         - COVERAGE=1 XDEBUG=1
-        - PHPUNIT_VERSION=^7.5
+        - PHPUNIT_VERSION=^6.0
         - LARAVEL_VERSION=5.5.*
     - php: 7.1
       env:
@@ -59,7 +59,7 @@ matrix:
     - php: 7.2
       env:
         - COVERAGE=1 XDEBUG=1
-        - PHPUNIT_VERSION=^7.5
+        - PHPUNIT_VERSION=^6.0
         - LARAVEL_VERSION=5.5.*
     - php: 7.2
       env:
