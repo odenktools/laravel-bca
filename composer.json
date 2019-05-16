@@ -11,16 +11,15 @@
     "role": "Developer"
   }],
   "require": {
-    "php": "^5.5.9 || ^5.6.4 || ^7.0",
+    "php": ">=5.4",
     "ext-curl": "*",
-    "illuminate/contracts": "5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
-    "illuminate/support": "5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
-    "illuminate/validation": "5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
-    "graham-campbell/manager": "^2.4 || ^3.0",
+    "illuminate/support": "5.2.x|5.3.x|5.4.x|5.5.x|5.6.x|5.7.x|5.8.x",
+    "illuminate/contracts": "5.2.x|5.3.x|5.4.x|5.5.x|5.6.x|5.7.x|5.8.x",
+    "graham-campbell/manager": "^2.4 || ^3.0 || ^4.0",
     "odenktools/php-bca": "2.*"
   },
   "require-dev": {
-    "graham-campbell/testbench": "3.2.*|3.3.*|3.4.*|3.5.*",
+    "graham-campbell/testbench": "^3.2 || ^3.3 || ^3.4 || ^4.0 || ^5.0 || ^5.1 || ^5.2",
     "mockery/mockery": "^0.9.5 || ~1.0",
     "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0"
   },
