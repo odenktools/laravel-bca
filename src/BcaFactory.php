@@ -18,39 +18,35 @@ class BcaFactory
      * Create a new BcaHttp client.
      *
      * @param array $config
+     * @param array $options optional parameter
      *
      * @return \BcaHttp
      */
-    public function make(array $config)
+    public function make(array $config, $options = [])
     {
-        $config = $this->getConfig($config);
+        $config = $this->getConfig($config, $options);
 
-        return $this->getClient($config);
+        return $this->getClient($config, $options);
     }
 
     /**
      * Get the configuration data.
      *
      * @param string[] $config
+     * @param array $options optional parameter
      *
      * @throws \InvalidArgumentException
      *
      * @return array
      */
-    protected function getConfig(array $config)
+    protected function getConfig(array $config, $options = array())
     {
         $keys = [
             'corp_id',
             'client_id',
             'client_secret',
             'api_key',
-            'secret_key',
-            'scheme',
-            'port',
-            'timezone',
-            'host',
-            'timeout',
-            'development',
+            'secret_key'
         ];
 
         foreach ($keys as $key) {
@@ -63,20 +59,22 @@ class BcaFactory
     }
 
     /**
-     * Get the bca http.
+     * Get the BCA Http client.
      *
      * @param string[] $auth
+     * @param array $options optional parameter
      *
      * @return \BcaHttp
      */
-    protected function getClient(array $auth)
+    protected function getClient(array $auth, $options = [])
     {
         return new BcaHttp(
             $auth['corp_id'],
             $auth['client_id'],
             $auth['client_secret'],
             $auth['api_key'],
-            $auth['secret_key']
+            $auth['secret_key'],
+            $options
         );
     }
 }

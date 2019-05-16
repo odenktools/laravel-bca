@@ -38,9 +38,9 @@ Seluruh fitur, method, property pada Laravel PHP library ini seluruhnya sama den
 * [Mutasi Rekening](https://github.com/odenktools/laravel-bca#account-statement)
 * [Info Kurs](https://github.com/odenktools/laravel-bca#foreign-exchange-rate)
 * [Pencarian ATM Terdekat](https://github.com/odenktools/laravel-bca#nearest-atm-locator)
-* [Deposit Rate](https://github.com/odenktools/php-bca#deposit-rate)
-* [Generate Signature](https://github.com/odenktools/php-bca#generate-signature)
-* [How to contribute](https://github.com/odenktools/php-bca#how-to-contribute)
+* [Deposit Rate](https://github.com/odenktools/laravel-bca#deposit-rate)
+* [Generate Signature](https://github.com/odenktools/laravel-bca#generate-signature)
+* [How to contribute](https://github.com/odenktools/laravel-bca#how-to-contribute)
 
 ### INSTALASI
 
@@ -254,6 +254,19 @@ Saat berguna untuk keperluan testing.
 	echo $authSignature;
 ```
 
+# Test
+
+**Using Composer**
+
+```bash
+composer run-script test:ci
+```
+
+**Using PHPUnit**
+
+```bash
+vendor/bin/phpunit --verbose --coverage-text
+```
 
 # How to contribute
 

@@ -78,7 +78,6 @@ class BcaServiceProvider extends ServiceProvider
         $this->app->singleton('bca', function (Container $app) {
             $config  = $app['config'];
             $factory = $app['bca.factory'];
-
             return new BcaManager($config, $factory);
         });
 
