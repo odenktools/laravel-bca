@@ -11,18 +11,22 @@ Laravel PHP library untuk mengintegrasikan Aplikasi Anda dengan sistem BCA (Bank
 
 Library ini support PHP :
 
-* PHP 5.5
-* PHP 5.6
-* PHP 7.0
-* PHP 7.1
-* PHP 7.2
+- [x] PHP 5.5.x
+- [x] PHP 5.6.x
+- [x] PHP 7.0.x
+- [x] PHP 7.1.x
+- [x] PHP 7.2.x
+- [ ] PHP 7.3.x
 
 Library ini support Laravel :
 
-* Laravel 5.2.x
-* Laravel 5.3.x
-* Laravel 5.4.x
-* Laravel 5.5.x
+- [x] Laravel 5.2.x
+- [x] Laravel 5.3.x
+- [x] Laravel 5.4.x
+- [x] Laravel 5.5.x
+- [x] Laravel 5.6.x
+- [x] Laravel 5.7.x
+- [x] Laravel 5.8.x
 
 Jika merasa terbantu dengan adanya library ini, jangan lupa untuk berikan ```STAR``` pada respository ini. Happy Koding!
 
