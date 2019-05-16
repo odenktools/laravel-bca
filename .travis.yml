@@ -102,15 +102,12 @@ matrix:
         - LARAVEL_VERSION=5.8.*
   fast_finish: true
   allow_failures:
-    - php: 7.0
-    - php: 7.1
-    - php: 7.2
     - php: 7.3
 
 before_script:
   - curl --version
   - travis_retry composer require "phpunit/phpunit:${PHPUNIT_VERSION}" --dev --no-update -n
-  - travis_retry composer require "laravel/framework:${LARAVEL_VERSION}" --no-interaction --prefer-source --dev
+  - travis_retry composer install --no-interaction --prefer-source --dev
   - if [[ "$TRAVIS_PHP_VERSION" != "7.0" || "$TRAVIS_PHP_VERSION" != "7.1" ]]; then echo "xdebug.overload_var_dump = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini || true; fi
 
 script:
