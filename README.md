@@ -150,7 +150,7 @@ Pastikan anda mendapatkan nilai ```TOKEN``` dan ```TOKEN``` tersebut masih berla
 	$nomorPO = '12345/PO/2017';
 
 	// Nomor Transaksi anda, Silahkan generate sesuai kebutuhan anda
-	$nomorTransaksiID = '00000001;
+	$nomorTransaksiID = '00000001';
 
 	$response = \Bca::fundTransfers($token, 
 						$amount,
