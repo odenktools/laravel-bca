@@ -91,7 +91,7 @@ Papda Konfigurasi `config/Bca.php`, silahkan input Environment yang sesuai denga
             'client_secret' => 'your-client_secret',
             'api_key'       => 'your-api_key',
             'secret_key'    => 'your-secret_key',
-            'timezone'      => 'Asia/Jakarta',
+            'timezone'      => 'Asia/Makassar',
             'host'          => 'sandbox.bca.co.id',
             'scheme'        => 'https',
             'development'   => true,
@@ -122,7 +122,7 @@ Pastikan anda mendapatkan nilai ```TOKEN``` dan ```TOKEN``` tersebut masih berla
 	$token = "MvXPqa5bQs5U09Bbn8uejBE79BjI3NNCwXrtMnjdu52heeZmw9oXgB";
 
 	//Nomor akun yang akan di ambil informasi saldonya, menggunakan ARRAY
-	$arrayAccNumber = array('0201245680', '0063001004', '1111111111');
+	$arrayAccNumber = array('7970234831', '7970234831', '7970234831');
 
 	$response = \Bca::getBalanceInfo($token, $arrayAccNumber);
 	
@@ -141,10 +141,10 @@ Pastikan anda mendapatkan nilai ```TOKEN``` dan ```TOKEN``` tersebut masih berla
 	$amount = '50000.00';
 
 	// Nilai akun bank anda
-	$nomorakun = '0201245680';
+	$nomorakun = '7970234831';
 
 	// Nilai akun bank yang akan ditransfer
-	$nomordestinasi = '0201245681';
+	$nomordestinasi = '7970234831';
 
 	// Nomor PO, silahkan sesuaikan
 	$nomorPO = '12345/PO/2017';
@@ -173,7 +173,7 @@ Pastikan anda mendapatkan nilai ```TOKEN``` dan ```TOKEN``` tersebut masih berla
 	$token = "MvXPqa5bQs5U09Bbn8uejBE79BjI3NNCwXrtMnjdu52heeZmw9oXgB";
 
 	// Nilai akun bank anda
-	$nomorakun = '0201245680';
+	$nomorakun = '7970234831';
 	
 	// Tanggal start transaksi anda
 	$startdate = '2016-08-29';
