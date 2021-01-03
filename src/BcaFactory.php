@@ -20,11 +20,11 @@ class BcaFactory
      * @param array $config
      * @param array $options optional parameter
      *
-     * @return \BcaHttp
+     * @return BcaHttp
      */
-    public function make(array $config, $options = [])
+    public function make(array $config, array $options = [])
     {
-        $config = $this->getConfig($config, $options);
+        $config = $this->getConfig($config);
 
         return $this->getClient($config, $options);
     }
@@ -33,13 +33,12 @@ class BcaFactory
      * Get the configuration data.
      *
      * @param string[] $config
-     * @param array $options optional parameter
      *
      * @throws \InvalidArgumentException
      *
      * @return array
      */
-    protected function getConfig(array $config, $options = array())
+    protected function getConfig(array $config)
     {
         $keys = [
             'corp_id',
@@ -55,7 +54,7 @@ class BcaFactory
             }
         }
 
-        return array_only($config, $keys);
+        return array_intersect_key($config, array_flip((array)$keys));
     }
 
     /**
@@ -64,9 +63,9 @@ class BcaFactory
      * @param string[] $auth
      * @param array $options optional parameter
      *
-     * @return \BcaHttp
+     * @return BcaHttp
      */
-    protected function getClient(array $auth, $options = [])
+    protected function getClient(array $auth, array $options = [])
     {
         return new BcaHttp(
             $auth['corp_id'],

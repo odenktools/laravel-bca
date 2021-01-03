@@ -23,7 +23,13 @@ return [
             'host'          => 'sandbox.bca.co.id',
             'scheme'        => 'https',
             'development'   => true,
-            'options'       => [],
+            'options' => [
+                'host'     => 'sandbox.bca.co.id',
+                'scheme'   => 'https',
+                'timeout'  => 60,
+                'port'     => 443,
+                'timezone' => 'Asia/Jakarta'
+            ],
             'port'          => 443,
             'timeout'       => 30,
         ],
@@ -38,7 +44,13 @@ return [
             'host'          => 'sandbox.bca.co.id',
             'scheme'        => 'https',
             'development'   => true,
-            'options'       => [],
+            'options' => [
+                'host'     => 'sandbox.bca.co.id',
+                'scheme'   => 'https',
+                'timeout'  => 60,
+                'port'     => 443,
+                'timezone' => 'Asia/Jakarta'
+            ],
             'port'          => 443,
             'timeout'       => 30,
         ],
