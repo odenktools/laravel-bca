@@ -45,7 +45,7 @@ class BcaManager extends AbstractManager
      */
     protected function createConnection(array $config)
     {
-        return $this->factory->make($config, $config['options']);
+        return $this->factory->make($config);
     }
 
     /**

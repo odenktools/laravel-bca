@@ -13,8 +13,8 @@
   "require": {
     "php": ">=5.4",
     "ext-curl": "*",
-    "illuminate/support": "5.2.x|5.3.x|5.4.x|5.5.x|5.6.x|5.7.x|5.8.x",
-    "illuminate/contracts": "5.2.x|5.3.x|5.4.x|5.5.x|5.6.x|5.7.x|5.8.x",
+    "illuminate/support": "5.2.x|5.3.x|5.4.x|5.5.x|5.6.x|5.7.x|5.8.x|^6.0",
+    "illuminate/contracts": "5.2.x|5.3.x|5.4.x|5.5.x|5.6.x|5.7.x|5.8.x|^6.0",
     "graham-campbell/manager": "^2.4 || ^3.0 || ^4.0",
     "odenktools/php-bca": "2.*"
   },
